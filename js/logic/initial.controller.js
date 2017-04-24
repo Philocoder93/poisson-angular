@@ -20,6 +20,8 @@
     }
     this.fillBoardPoisson = function(board){
       let darts = Math.floor(0.9*Math.pow(board.length,2))
+      console.log('this is the amount in the poisson')
+      console.log(darts)
       for (let i=0;i<darts;i++) {
         let x = Math.floor(board.length*Math.random())
         let y = Math.floor(board.length*Math.random())
@@ -29,6 +31,8 @@
     }
     this.fillBoardRigged = function(board){
       let darts = Math.floor(0.9*Math.pow(board.length,2))
+      console.log('this is the amount in the rigged')
+      console.log(darts)
       for (let i=0;i<darts;i++) {
         let x = Math.floor(board.length*Math.random())
         let y = Math.floor(board.length*Math.random())
@@ -65,5 +69,9 @@
     }
     this.poissonboardGenerate()
     this.riggedboardGenerate()
+
+    this.returnClass = function(value){
+      return "value" + value
+    }
   }
 }())

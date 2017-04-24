@@ -1,0 +1,55 @@
+html {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+body {
+  min-height: inherit;
+  min-width: inherit;
+}
+main {
+  min-height: inherit;
+  min-width: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+article * {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+article * * {
+  height: 15px;
+  width: 15px;
+}
+.center {
+  width: 25vw;
+}
+
+.value0 {
+  background-color: #0000FF;
+}
+.value1 {
+  background-color: #5B00FF;
+}
+.value2 {
+  background-color: #B300FF;
+}
+.value3 {
+  background-color: #FF00B8;
+}
+.value4 {
+  background-color: #FF005C;
+}
+.value5 {
+  background-color: #FF002D;
+}
+.value6 {
+  background-color: #FF0000;
+}

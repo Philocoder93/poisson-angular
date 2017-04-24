@@ -1,8 +1,19 @@
-<!-- <article class="poisson">
-  <div data-ng-repeat></div>
-    <div data-ng-repeat></div>
+<article class="poisson">
+  <div data-ng-repeat="row in initialVM.poissonBoard track by $index">
+    <div data-ng-repeat="space in row track by $index" ng-class="initialVM.returnClass(space)">{{space.toString()}}</div>
+  </div>
+</article>
+<article class="center">
+  <p>
+    Both of these boards were created by distributing the number 562 over a board with 625
+    squares. However, one of the boards was created using a totally random distribution algorithm
+    while the other was rigged, which one is rigged and which one is totally random?
+  </p>
+  <button data-ui-sref="correct">The Left one is random!</button>
+  <button data-ui-sref="incorrect">The Right one is random!</button>
 </article>
 <article class="non-poisson">
-  <div data-ng-repeat></div>
-    <div data-ng-repeat></div>
-</article> -->
+  <div data-ng-repeat="row in initialVM.riggedBoard track by $index">
+    <div data-ng-repeat="space in row track by $index" ng-class="initialVM.returnClass(space)">{{space.toString()}}</div>
+  </div>
+</article>
