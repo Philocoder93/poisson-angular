@@ -19,8 +19,8 @@
     .state('initial', {
       url: '/initial',
       templateUrl: 'js/logic/initial.html',
-      controller: 'initalCrtl',
-      controllerAs: 'intialVM'
+      controller: 'initialCrtl',
+      controllerAs: 'initialVM'
     })
     .state('correct', {
       url: '/correct',

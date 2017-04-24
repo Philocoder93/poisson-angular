@@ -1,11 +1,12 @@
 "use strict";
 (function(){
-  .module("logic")
-  .controller("incorrectCrtl",[
+  angular
+  .module('logic')
+  .controller('incorrectCrtl',[
     incorrectCrtlFunction
   ])
 
-  function incorrctCrtlFunction(){
+  function incorrectCrtlFunction(){
     this.test = function(){
       console.log("testing, testing")
     }
