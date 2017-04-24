@@ -7,8 +7,22 @@
   ])
 
   function initialCrtlFunction(){
-    this.test = function(){
-      console.log('testing, testing 123')
+    this.generateBoard = function(length){
+      let board = []
+      for (i=0;i<length;i++) {
+        let row = []
+        for (j=0;j< =length;j++) {
+          row.push("0")
+        }
+        board.push(row)
+      }
+      return board
+    }
+    this.fillBoardPoisson = function(){
+
+    }
+    this.fillBoardRigged = function(){
+
     }
   }
 }())

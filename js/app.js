@@ -3,7 +3,6 @@
   angular
   .module('poisson', [
     'logic',
-    'nav',
     'ui.router'
   ])
   .config([
