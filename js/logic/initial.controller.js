@@ -18,11 +18,26 @@
       }
       return board
     }
-    this.fillBoardPoisson = function(){
-
+    this.fillBoardPoisson = function(board,darts){
+      for (i=0;i<darts;i++) {
+        let x = Math.floor(board.length*Math.random())
+        let y = Math.floor(board.length*Math.random())
+        board[x][y] = (Number(board[x][y])+1).toString
+      }
+      return board
     }
     this.fillBoardRigged = function(){
-
+      for (i=0;i<darts;i++) {
+        let x = Math.floor(board.length*Math.random())
+        let y = Math.floor(board.length*Math.random())
+        if (board[x][y] == "0"){
+          board[x][y] = (Number(board[x][y])+1).toString
+        }
+        else{
+          i = i-1
+        }
+      }
+      return board
     }
   }
 }())
